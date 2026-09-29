@@ -1,0 +1,2 @@
+11e60d488d727314309082fec04a8a5ffad55e3ff880a83fdcd2e1b47d7f3748  models/acet_net_seed42_best.pt
+2973e1e593efc5035ab6e95b65ba7576ba1d3859ce8a0a4ca10e89bbc8af13b7  models/liver_localizer_unet_seed42_best.pt

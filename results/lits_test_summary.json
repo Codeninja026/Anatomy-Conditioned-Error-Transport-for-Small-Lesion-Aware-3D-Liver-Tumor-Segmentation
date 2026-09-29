@@ -1,0 +1,36 @@
+{
+  "dataset": "LiTS",
+  "split": "held-out test",
+  "patients": 20,
+  "checkpoint": "models/acet_net_seed42_best.pt",
+  "tta": true,
+  "metrics": {
+    "liver_dice": 0.9514036301682973,
+    "liver_precision": 0.9225711416982549,
+    "liver_recall": 0.9820964217333719,
+    "liver_iou": 0.9073115810242558,
+    "tumor_dice": 0.7536830440787572,
+    "tumor_precision": 0.7570854338912415,
+    "tumor_recall": 0.7503110985576219,
+    "tumor_iou": 0.6047282278380427,
+    "pixel_accuracy": 0.997153117861482
+  },
+  "lesion_size_metrics": {
+    "small_lt_15mm": {
+      "lesions": 74,
+      "detection_recall": 0.8378378378378378,
+      "local_dice": 0.609679840166721
+    },
+    "medium_15_to_40mm": {
+      "lesions": 24,
+      "detection_recall": 0.9583333333333334,
+      "local_dice": 0.758215329048868
+    },
+    "large_gt_40mm": {
+      "lesions": 6,
+      "detection_recall": 0.8333333333333334,
+      "local_dice": 0.6888346075267625
+    }
+  },
+  "note": "Aggregate metrics copied from the run evaluation summary. Per-patient and lesion-level coordinates are deliberately excluded."
+}

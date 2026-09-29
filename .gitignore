@@ -1,0 +1,13 @@
+# Python environments, caches, datasets, generated predictions, and local run output
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+cache/
+dataset/
+prepared/
+runs/
+*.npz
+*.nii
+*.nii.gz
+*.dcm

@@ -1,0 +1,12 @@
+numpy>=1.26
+scipy>=1.12
+nibabel>=5.2
+matplotlib>=3.8
+pydicom>=2.4
+PyYAML>=6.0
+tqdm>=4.66
+# RTX 5060 CUDA build; do not replace with the CPU-only PyPI wheel.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+google-api-python-client>=2.150
+google-auth>=2.35
