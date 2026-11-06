@@ -52,6 +52,10 @@ These are results from one seed and one held-out split. They are not a multi-see
 
 ![Example predictions on held-out cases](assets/prediction_comparison.png)
 
+## Additional experiment results
+
+The `results/` directory contains the aggregate LiTS comparison results for CERS-U-Net and plain 3D U-Net, each with and without four-view flip TTA; all available zero-shot 3DIRCADb summaries for the ACET, CERS, and U-Net runs; and validation threshold-sweep outputs. The `results/ablations/` folder includes the full 18-epoch aggregate train/validation histories and selected/final validation summaries for the anatomy-gating-off, transformer-off, and self-verification-off ablations. No held-out test metrics were available for those ablations, so they are explicitly labeled as validation-only. See [the results index](results/README.md) for provenance and interpretation notes.
+
 ## Optional two-stage ROI workflow
 
 The Stage 1 U-Net predicts the foreground union (`label >= 1`) to suggest liver-region boxes. The Stage 2 ACET model remains the final three-class segmenter. ROI sampling is a training focus mechanism; whole-volume evaluation reconstructs complete volumes and retains a safety sampling path. The ROI manifest is dataset-specific and is intentionally not distributed.

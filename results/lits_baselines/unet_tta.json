@@ -1,0 +1,38 @@
+{
+  "model": "3D U-Net",
+  "dataset": "LiTS",
+  "split": "held-out test",
+  "inference_condition": "four-view in-plane flip TTA",
+  "metrics": {
+    "liver_dice": 0.9544986153482282,
+    "liver_precision": 0.9280767546377603,
+    "liver_recall": 0.9824689947394137,
+    "liver_iou": 0.9129577725677962,
+    "tumor_dice": 0.7576610591167048,
+    "tumor_precision": 0.7787896179014117,
+    "tumor_recall": 0.7376486544820842,
+    "tumor_iou": 0.6098666267178364,
+    "pixel_accuracy": 0.9973483155909866,
+    "volumes": 20,
+    "lesion_size_metrics": {
+      "small_lt_15mm": {
+        "lesions": 74,
+        "detection_recall": 0.8108108108108109,
+        "local_dice": 0.5776609588840529
+      },
+      "medium_15_to_40mm": {
+        "lesions": 24,
+        "detection_recall": 1.0,
+        "local_dice": 0.7697903657071298
+      },
+      "large_gt_40mm": {
+        "lesions": 6,
+        "detection_recall": 0.8333333333333334,
+        "local_dice": 0.6742563607130229
+      }
+    },
+    "tta": true,
+    "tumor_threshold": 0.35
+  },
+  "source_file": "baseline_results_full_trained/plain-3D-Unet/metrics/test_results_tta.json"
+}

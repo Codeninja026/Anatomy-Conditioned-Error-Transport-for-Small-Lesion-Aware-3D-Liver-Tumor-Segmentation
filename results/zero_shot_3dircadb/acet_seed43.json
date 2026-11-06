@@ -1,0 +1,40 @@
+{
+  "model": "ACET-Net",
+  "dataset": "3DIRCADb",
+  "evaluation": "zero-shot external evaluation",
+  "patients_reported": 20,
+  "checkpoint_label": "best.pt",
+  "metrics": {
+    "liver_dice": 0.9406795831141727,
+    "liver_precision": 0.9214841761922047,
+    "liver_recall": 0.9631381966733465,
+    "liver_iou": 0.8889899511900541,
+    "tumor_dice": 0.4805960334186226,
+    "tumor_precision": 0.4844337453022403,
+    "tumor_recall": 0.44174297346176017,
+    "tumor_iou": 0.34740238522768724,
+    "pixel_accuracy": 0.9936620759640136,
+    "volumes": 1.0,
+    "lesion_size_metrics": {
+      "large_gt_40mm": {
+        "lesions": 6,
+        "detection_recall": 0.8333333333333334,
+        "local_dice": 0.6558629494005749
+      },
+      "medium_15_to_40mm": {
+        "lesions": 38,
+        "detection_recall": 0.9736842105263158,
+        "local_dice": 0.7510624026475726
+      },
+      "small_lt_15mm": {
+        "lesions": 72,
+        "detection_recall": 0.8472222222222222,
+        "local_dice": 0.6011466868453974
+      }
+    },
+    "tta": true,
+    "tumor_threshold": 0.35
+  },
+  "source_file": "runs/acet_seed43/metrics/ircadb_zero_shot_summary.json",
+  "note": "External evaluation only; not used for training, model selection, or threshold tuning."
+}

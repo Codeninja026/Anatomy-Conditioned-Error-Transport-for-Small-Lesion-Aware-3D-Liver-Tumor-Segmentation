@@ -1,0 +1,38 @@
+{
+  "model": "ACET-Net ablation",
+  "variant": "Bottleneck transformer off",
+  "seed": 42,
+  "epochs_completed": 18,
+  "best_validation_epoch": 18,
+  "best_validation_metrics": {
+    "liver_dice": 0.8989535836790333,
+    "liver_precision": 0.8346252270444242,
+    "liver_recall": 0.9740262069107738,
+    "liver_iou": 0.8164538482244865,
+    "tumor_dice": 0.7992570970339048,
+    "tumor_precision": 0.7429858684293845,
+    "tumor_recall": 0.8647503546590083,
+    "tumor_iou": 0.6656354953750436,
+    "pixel_accuracy": 0.9947866828500372,
+    "loss": 0.3973432719320663,
+    "selection_score": 0.8022327142178755,
+    "selection_score_smooth": 0.7921813247888024
+  },
+  "final_epoch_validation_metrics": {
+    "liver_dice": 0.8989535836790333,
+    "liver_precision": 0.8346252270444242,
+    "liver_recall": 0.9740262069107738,
+    "liver_iou": 0.8164538482244865,
+    "tumor_dice": 0.7992570970339048,
+    "tumor_precision": 0.7429858684293845,
+    "tumor_recall": 0.8647503546590083,
+    "tumor_iou": 0.6656354953750436,
+    "pixel_accuracy": 0.9947866828500372,
+    "loss": 0.3973432719320663,
+    "selection_score": 0.8022327142178755,
+    "selection_score_smooth": 0.7921813247888024
+  },
+  "held_out_test_metrics": null,
+  "note": "Only validation and training history is available for this ablation. No test result file/checkpoint was present in the supplied experiment folder.",
+  "best_validation_selection_score": 0.7921813247888024
+}

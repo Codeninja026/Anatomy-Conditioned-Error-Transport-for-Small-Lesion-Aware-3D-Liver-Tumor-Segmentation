@@ -1,0 +1,40 @@
+{
+  "model": "CERS-U-Net",
+  "dataset": "3DIRCADb",
+  "evaluation": "zero-shot external evaluation",
+  "patients_reported": 20,
+  "checkpoint_label": "best.pt",
+  "metrics": {
+    "liver_dice": 0.9408173087078942,
+    "liver_precision": 0.9161327909136524,
+    "liver_recall": 0.9680142125212198,
+    "liver_iou": 0.8888766026118239,
+    "tumor_dice": 0.5634307432494843,
+    "tumor_precision": 0.4770653641744973,
+    "tumor_recall": 0.4217978970130143,
+    "tumor_iou": 0.33351511480226537,
+    "pixel_accuracy": 0.993550556991585,
+    "volumes": 1.0,
+    "lesion_size_metrics": {
+      "large_gt_40mm": {
+        "lesions": 6,
+        "detection_recall": 0.8333333333333334,
+        "local_dice": 0.6180607953560812
+      },
+      "medium_15_to_40mm": {
+        "lesions": 38,
+        "detection_recall": 1.0,
+        "local_dice": 0.7374193532312905
+      },
+      "small_lt_15mm": {
+        "lesions": 72,
+        "detection_recall": 0.8611111111111112,
+        "local_dice": 0.558934817484755
+      }
+    },
+    "tta": true,
+    "tumor_threshold": 0.35
+  },
+  "source_file": "runs/cers_baseline/metrics/ircadb_zero_shot_summary.json",
+  "note": "External evaluation only; not used for training, model selection, or threshold tuning."
+}

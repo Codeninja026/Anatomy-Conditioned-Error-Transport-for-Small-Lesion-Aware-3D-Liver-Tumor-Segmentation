@@ -1,0 +1,38 @@
+{
+  "model": "CERS-U-Net",
+  "dataset": "LiTS",
+  "split": "held-out test",
+  "inference_condition": "four-view in-plane flip TTA",
+  "metrics": {
+    "liver_dice": 0.9546305074597076,
+    "liver_precision": 0.9277022580898122,
+    "liver_recall": 0.9831687735643393,
+    "liver_iou": 0.9131991265020704,
+    "tumor_dice": 0.7649639519545508,
+    "tumor_precision": 0.8032668663997045,
+    "tumor_recall": 0.7301476485745424,
+    "tumor_iou": 0.6193859306092094,
+    "pixel_accuracy": 0.9974163455436457,
+    "volumes": 20,
+    "lesion_size_metrics": {
+      "small_lt_15mm": {
+        "lesions": 74,
+        "detection_recall": 0.8243243243243243,
+        "local_dice": 0.5941067935469073
+      },
+      "medium_15_to_40mm": {
+        "lesions": 24,
+        "detection_recall": 1.0,
+        "local_dice": 0.7803211936724633
+      },
+      "large_gt_40mm": {
+        "lesions": 6,
+        "detection_recall": 0.8333333333333334,
+        "local_dice": 0.660528911810773
+      }
+    },
+    "tta": true,
+    "tumor_threshold": 0.35
+  },
+  "source_file": "baseline_results_full_trained/cers/metrics/test_results_tta.json"
+}

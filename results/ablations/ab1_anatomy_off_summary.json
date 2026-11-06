@@ -1,0 +1,38 @@
+{
+  "model": "ACET-Net ablation",
+  "variant": "Anatomy gating off",
+  "seed": 42,
+  "epochs_completed": 18,
+  "best_validation_epoch": 17,
+  "best_validation_metrics": {
+    "liver_dice": 0.8968327152616026,
+    "liver_precision": 0.8305421417255172,
+    "liver_recall": 0.9746232721085599,
+    "liver_iou": 0.8129616674358462,
+    "tumor_dice": 0.7718039271969802,
+    "tumor_precision": 0.7059123116850325,
+    "tumor_recall": 0.8512629320784748,
+    "tumor_iou": 0.6284044903641077,
+    "pixel_accuracy": 0.9945944173003096,
+    "loss": 0.40055140014525203,
+    "selection_score": 0.7782534101288183,
+    "selection_score_smooth": 0.7844399826697601
+  },
+  "final_epoch_validation_metrics": {
+    "liver_dice": 0.8978029157336165,
+    "liver_precision": 0.8336007165336176,
+    "liver_recall": 0.9727197765537107,
+    "liver_iou": 0.8145575129435125,
+    "tumor_dice": 0.7595348591960984,
+    "tumor_precision": 0.6802345556159344,
+    "tumor_recall": 0.8597643680149476,
+    "tumor_iou": 0.6122984308159363,
+    "pixel_accuracy": 0.994628265816972,
+    "loss": 0.39672437140098943,
+    "selection_score": 0.7686908056245126,
+    "selection_score_smooth": 0.7766009868363105
+  },
+  "held_out_test_metrics": null,
+  "note": "Only validation and training history is available for this ablation. No test result file/checkpoint was present in the supplied experiment folder.",
+  "best_validation_selection_score": 0.7844399826697601
+}

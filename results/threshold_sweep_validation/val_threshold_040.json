@@ -1,0 +1,32 @@
+{
+  "liver_dice": 0.9397593237144101,
+  "liver_precision": 0.903010987081011,
+  "liver_recall": 0.9796255143719294,
+  "liver_iou": 0.8863641480033854,
+  "tumor_dice": 0.8558512381416532,
+  "tumor_precision": 0.8320453542895421,
+  "tumor_recall": 0.8810594789107643,
+  "tumor_iou": 0.7480244411151259,
+  "pixel_accuracy": 0.9970552855030522,
+  "loss": null,
+  "volumes": 28,
+  "lesion_size_metrics": {
+    "small_lt_15mm": {
+      "lesions": 179,
+      "detection_recall": 0.6983240223463687,
+      "local_dice": 0.4966716984601337
+    },
+    "medium_15_to_40mm": {
+      "lesions": 51,
+      "detection_recall": 0.9607843137254902,
+      "local_dice": 0.7013053487805025
+    },
+    "large_gt_40mm": {
+      "lesions": 16,
+      "detection_recall": 1.0,
+      "local_dice": 0.8752461371408624
+    }
+  },
+  "tta": true,
+  "tumor_threshold": 0.4
+}

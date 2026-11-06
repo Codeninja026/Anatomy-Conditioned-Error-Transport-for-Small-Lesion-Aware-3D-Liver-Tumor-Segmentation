@@ -1,0 +1,38 @@
+{
+  "model": "ACET-Net",
+  "dataset": "3DIRCADb",
+  "evaluation": "zero-shot external evaluation",
+  "patients_reported": 20,
+  "checkpoint_label": "best.pt",
+  "metrics": {
+    "liver_dice": 0.9333474127634818,
+    "liver_precision": 0.9038568343568724,
+    "liver_recall": 0.9665914054623034,
+    "liver_iou": 0.875940120680955,
+    "tumor_dice": 0.5989038276521905,
+    "tumor_precision": 0.5026839711801865,
+    "tumor_recall": 0.44087609496060204,
+    "tumor_iou": 0.3593180368804555,
+    "pixel_accuracy": 0.992855604253819,
+    "volumes": 1.0,
+    "lesion_size_metrics": {
+      "large_gt_40mm": {
+        "lesions": 6,
+        "detection_recall": 0.8333333333333334,
+        "local_dice": 0.6448708142296041
+      },
+      "medium_15_to_40mm": {
+        "lesions": 38,
+        "detection_recall": 0.9736842105263158,
+        "local_dice": 0.726355354805871
+      },
+      "small_lt_15mm": {
+        "lesions": 72,
+        "detection_recall": 0.8194444444444444,
+        "local_dice": 0.5439390084642074
+      }
+    }
+  },
+  "source_file": "stage2_results/metrics/ircadb_zero_shot_summary.json",
+  "note": "External evaluation only; not used for training, model selection, or threshold tuning."
+}

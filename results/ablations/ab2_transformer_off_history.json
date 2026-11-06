@@ -1,0 +1,945 @@
+{
+  "model": "ACET-Net ablation",
+  "variant": "Bottleneck transformer off",
+  "seed": 42,
+  "epochs": 18,
+  "history": [
+    {
+      "epoch": 1,
+      "learning_rate": 5.7499999999999995e-05,
+      "train": {
+        "loss": 1.814915075948125,
+        "seconds": 1095.0061839260002,
+        "samples_per_second": 4.631024072333064,
+        "liver_dice": 0.7619032827647693,
+        "liver_precision": 0.6420235463455288,
+        "liver_recall": 0.9368297359342298,
+        "liver_iou": 0.6153826855030845,
+        "tumor_dice": 0.2934382409862483,
+        "tumor_precision": 0.2230639993742483,
+        "tumor_recall": 0.4286830273557519,
+        "tumor_iou": 0.17194703879678566,
+        "pixel_accuracy": 0.8744599333507167
+      },
+      "val": {
+        "liver_dice": 0.6251571468255782,
+        "liver_precision": 0.4658718892336497,
+        "liver_recall": 0.9499538172946125,
+        "liver_iou": 0.45471171151097844,
+        "tumor_dice": 0.1358105972149446,
+        "tumor_precision": 0.0766048678251576,
+        "tumor_recall": 0.5979464378395212,
+        "tumor_iou": 0.07285235985788072,
+        "pixel_accuracy": 0.9670145089089488,
+        "loss": 1.706546361190398,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.46368715083798884,
+            "local_dice": 0.23025025165321464
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.6171919330689223
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.6892456948452946
+          }
+        },
+        "epoch_seconds": 2305.3727814910003,
+        "peak_gpu_memory_gb": 9.375301837921143,
+        "selection_score": 0.26335627260605166,
+        "selection_score_smooth": 0.26335627260605166
+      }
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 0.000105,
+      "train": {
+        "loss": 1.353016959477214,
+        "seconds": 920.3931497819999,
+        "samples_per_second": 5.50960206162315,
+        "liver_dice": 0.8920329630491272,
+        "liver_precision": 0.8584108177061798,
+        "liver_recall": 0.9283962921530573,
+        "liver_iou": 0.8051078536632312,
+        "tumor_dice": 0.4508983328344435,
+        "tumor_precision": 0.4341863405707323,
+        "tumor_recall": 0.4689483267576816,
+        "tumor_iou": 0.29107084602101513,
+        "pixel_accuracy": 0.9516657605676156
+      },
+      "val": {
+        "liver_dice": 0.8347094475303274,
+        "liver_precision": 0.8192898204946635,
+        "liver_recall": 0.8507206250423086,
+        "liver_iou": 0.7163101475089417,
+        "tumor_dice": 0.45526416938800834,
+        "tumor_precision": 0.35013709853870184,
+        "tumor_recall": 0.6506055153800907,
+        "tumor_iou": 0.2947197574925431,
+        "pixel_accuracy": 0.9912180612443254,
+        "loss": 1.414978731995868,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.6089385474860335,
+            "local_dice": 0.3716771322503563
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.8823529411764706,
+            "local_dice": 0.5681951271932024
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.6692307194313486
+          }
+        },
+        "epoch_seconds": 2079.969566239,
+        "peak_gpu_memory_gb": 1.4755125045776367,
+        "selection_score": 0.5096586611912262,
+        "selection_score_smooth": 0.4172952654717857
+      }
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 0.0001525,
+      "train": {
+        "loss": 1.212835921300419,
+        "seconds": 921.9248009699995,
+        "samples_per_second": 5.500448617788388,
+        "liver_dice": 0.9113488739749152,
+        "liver_precision": 0.8792634129836708,
+        "liver_recall": 0.9458647022924089,
+        "liver_iou": 0.8371358391943792,
+        "tumor_dice": 0.5570647666998978,
+        "tumor_precision": 0.5701182176473144,
+        "tumor_recall": 0.5445956808401995,
+        "tumor_iou": 0.3860635972037695,
+        "pixel_accuracy": 0.9615423254796538
+      },
+      "val": {
+        "liver_dice": 0.7983704401387741,
+        "liver_precision": 0.6763095393459871,
+        "liver_recall": 0.9741937228879276,
+        "liver_iou": 0.6644064583688976,
+        "tumor_dice": 0.6282522645037519,
+        "tumor_precision": 0.5903430440404656,
+        "tumor_recall": 0.6713643126535414,
+        "tumor_iou": 0.45799402342477585,
+        "pixel_accuracy": 0.9882656804378059,
+        "loss": 1.2808805211633594,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.6480446927374302,
+            "local_dice": 0.40785463281067214
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.6266331495720503
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.7521192497248423
+          }
+        },
+        "epoch_seconds": 2083.53421635,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.6375245908940832,
+        "selection_score_smooth": 0.5243311483256198
+      }
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 0.0002,
+      "train": {
+        "loss": 1.1084245393624603,
+        "seconds": 915.5329402159996,
+        "samples_per_second": 5.538850406583045,
+        "liver_dice": 0.9216332063209745,
+        "liver_precision": 0.8910913680492589,
+        "liver_recall": 0.9543429706741947,
+        "liver_iou": 0.8546565155040349,
+        "tumor_dice": 0.637565154375402,
+        "tumor_precision": 0.6454744469785494,
+        "tumor_recall": 0.6298473477419613,
+        "tumor_iou": 0.4679601057055429,
+        "pixel_accuracy": 0.9668605234984509
+      },
+      "val": {
+        "liver_dice": 0.795383150564758,
+        "liver_precision": 0.6709961869180378,
+        "liver_recall": 0.9763813679794031,
+        "liver_iou": 0.6602789517161873,
+        "tumor_dice": 0.6031805802342746,
+        "tumor_precision": 0.4847746727221906,
+        "tumor_recall": 0.7981211722777759,
+        "tumor_iou": 0.4318243086392943,
+        "pixel_accuracy": 0.9877814804460034,
+        "loss": 1.2619877265480892,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.776536312849162,
+            "local_dice": 0.5260705135849045
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7160164746229087
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8081085600799052
+          }
+        },
+        "epoch_seconds": 2077.168566794,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.6263555413040616,
+        "selection_score_smooth": 0.6063668801585009
+      }
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 0.0002,
+      "train": {
+        "loss": 1.0497194676592232,
+        "seconds": 919.0767620909992,
+        "samples_per_second": 5.517493430917573,
+        "liver_dice": 0.9276357621743545,
+        "liver_precision": 0.897465913099387,
+        "liver_recall": 0.9599045941248646,
+        "liver_iou": 0.8650379502166669,
+        "tumor_dice": 0.6803860978204068,
+        "tumor_precision": 0.6857090915304129,
+        "tumor_recall": 0.6751451097441243,
+        "tumor_iou": 0.5155948241350139,
+        "pixel_accuracy": 0.9698059030877747
+      },
+      "val": {
+        "liver_dice": 0.7953925847710691,
+        "liver_precision": 0.6694691605681393,
+        "liver_recall": 0.9796614533482947,
+        "liver_iou": 0.6602919546364471,
+        "tumor_dice": 0.6410994925842773,
+        "tumor_precision": 0.5163743666598322,
+        "tumor_recall": 0.8452648697276911,
+        "tumor_iou": 0.4717780949272605,
+        "pixel_accuracy": 0.9878067320506779,
+        "loss": 1.2661237386125974,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7318435754189944,
+            "local_dice": 0.5024455561820611
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9607843137254902,
+            "local_dice": 0.6875113591309866
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8191989153158281
+          }
+        },
+        "epoch_seconds": 2081.774570804,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.6592273543294398,
+        "selection_score_smooth": 0.645025257734755
+      }
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 0.00019914876613020898,
+      "train": {
+        "loss": 0.8648133320217646,
+        "seconds": 911.375291237,
+        "samples_per_second": 5.564118367377957,
+        "liver_dice": 0.9328137925721196,
+        "liver_precision": 0.9043452809136062,
+        "liver_recall": 0.9631329210856505,
+        "liver_iou": 0.8740871893578688,
+        "tumor_dice": 0.7279627519912606,
+        "tumor_precision": 0.7088475140985592,
+        "tumor_recall": 0.7481375091562935,
+        "tumor_iou": 0.5722810028800818,
+        "pixel_accuracy": 0.9722796819826434
+      },
+      "val": {
+        "liver_dice": 0.8331542591648683,
+        "liver_precision": 0.7303797656441364,
+        "liver_recall": 0.9695887520119476,
+        "liver_iou": 0.7140226252774127,
+        "tumor_dice": 0.6622406707093194,
+        "tumor_precision": 0.5474947176590157,
+        "tumor_recall": 0.8378377910798934,
+        "tumor_iou": 0.49503722845308723,
+        "pixel_accuracy": 0.9905548834003934,
+        "loss": 0.5485198064971575,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.8268156424581006,
+            "local_dice": 0.5700729843022609
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7309793441656376
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.825679146090883
+          }
+        },
+        "epoch_seconds": 2074.0980619750007,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.680285039850069,
+        "selection_score_smooth": 0.6631818344846787
+      }
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 0.00019660961836576464,
+      "train": {
+        "loss": 0.7470395404354562,
+        "seconds": 909.6889317770001,
+        "samples_per_second": 5.574432994698108,
+        "liver_dice": 0.9389411339450401,
+        "liver_precision": 0.9130504087898236,
+        "liver_recall": 0.9663430405965047,
+        "liver_iou": 0.8849095596703732,
+        "tumor_dice": 0.7623541239413233,
+        "tumor_precision": 0.7389294932066046,
+        "tumor_recall": 0.7873125341200063,
+        "tumor_iou": 0.6159711260615716,
+        "pixel_accuracy": 0.9751496101549405
+      },
+      "val": {
+        "liver_dice": 0.8404116680303227,
+        "liver_precision": 0.7420672949392616,
+        "liver_recall": 0.9688050432321229,
+        "liver_iou": 0.7247500210723913,
+        "tumor_dice": 0.6377737732446629,
+        "tumor_precision": 0.49849114222044233,
+        "tumor_recall": 0.8850697207709076,
+        "tumor_iou": 0.46818491724664935,
+        "pixel_accuracy": 0.990938164539408,
+        "loss": 0.5089486640741084,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.8379888268156425,
+            "local_dice": 0.5818928607242743
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7235205324776823
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8431238453472071
+          }
+        },
+        "epoch_seconds": 2075.3505063990015,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.6674125693380142,
+        "selection_score_smooth": 0.6696372674899158
+      }
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 0.00019242601066827775,
+      "train": {
+        "loss": 0.7278360089637395,
+        "seconds": 911.8648662960004,
+        "samples_per_second": 5.561131024633048,
+        "liver_dice": 0.9424091642291553,
+        "liver_precision": 0.9188714197288784,
+        "liver_recall": 0.9671844929541491,
+        "liver_iou": 0.8910905166290166,
+        "tumor_dice": 0.7898706563243477,
+        "tumor_precision": 0.7584271851801214,
+        "tumor_recall": 0.8240341110349431,
+        "tumor_iou": 0.6527158939268352,
+        "pixel_accuracy": 0.9769070331360598
+      },
+      "val": {
+        "liver_dice": 0.8716834207315254,
+        "liver_precision": 0.8047106725122809,
+        "liver_recall": 0.9508159044241403,
+        "liver_iou": 0.7725521690877457,
+        "tumor_dice": 0.6096598902487992,
+        "tumor_precision": 0.46456613677468483,
+        "tumor_recall": 0.8865471782983287,
+        "tumor_iou": 0.4384969447208833,
+        "pixel_accuracy": 0.9930112874587046,
+        "loss": 0.5244394275618981,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7877094972067039,
+            "local_dice": 0.5419311438826687
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7306422285443387
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8412255393124426
+          }
+        },
+        "epoch_seconds": 2077.888201566,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.6516161554547287,
+        "selection_score_smooth": 0.6620888564987825
+      }
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 0.00018666952612996103,
+      "train": {
+        "loss": 0.6606770975279614,
+        "seconds": 918.1358231660015,
+        "samples_per_second": 5.523147957662037,
+        "liver_dice": 0.9454087876847092,
+        "liver_precision": 0.922551655994296,
+        "liver_recall": 0.9694273101694412,
+        "liver_iou": 0.8964694344542484,
+        "tumor_dice": 0.8048656835246174,
+        "tumor_precision": 0.7738209110533161,
+        "tumor_recall": 0.8385055256211621,
+        "tumor_iou": 0.6734520734859981,
+        "pixel_accuracy": 0.9780756115936899
+      },
+      "val": {
+        "liver_dice": 0.8758495564562527,
+        "liver_precision": 0.7959001291523936,
+        "liver_recall": 0.9736547129596547,
+        "liver_iou": 0.7791213013226626,
+        "tumor_dice": 0.7328509026119112,
+        "tumor_precision": 0.6505633759358855,
+        "tumor_recall": 0.8389692398186914,
+        "tumor_iou": 0.5783462294393772,
+        "pixel_accuracy": 0.9932933818962653,
+        "loss": 0.4825390340037779,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7039106145251397,
+            "local_dice": 0.4790464059071538
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.71247850019547
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8496878888934057
+          }
+        },
+        "epoch_seconds": 2086.745191446,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.7424248549509221,
+        "selection_score_smooth": 0.7001797879794825
+      }
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 0.00017943865525722505,
+      "train": {
+        "loss": 0.6167200009265646,
+        "seconds": 952.4343814130007,
+        "samples_per_second": 5.32425130517131,
+        "liver_dice": 0.9478034279701179,
+        "liver_precision": 0.9254675347610615,
+        "liver_recall": 0.9712441260658441,
+        "liver_iou": 0.9007855121041018,
+        "tumor_dice": 0.8220080320649251,
+        "tumor_precision": 0.7853862232570167,
+        "tumor_recall": 0.8622121609042943,
+        "tumor_iou": 0.697804445564972,
+        "pixel_accuracy": 0.979192558112546
+      },
+      "val": {
+        "liver_dice": 0.8778837186949778,
+        "liver_precision": 0.7993733886762697,
+        "liver_recall": 0.9734954158752247,
+        "liver_iou": 0.7823464763152694,
+        "tumor_dice": 0.7643350012181181,
+        "tumor_precision": 0.6743619420506478,
+        "tumor_recall": 0.8820127331234213,
+        "tumor_iou": 0.6185616667718187,
+        "pixel_accuracy": 0.9934961347514496,
+        "loss": 0.5214253726219402,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7206703910614525,
+            "local_dice": 0.4913874524521006
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7304759456103528
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8444238795239083
+          }
+        },
+        "epoch_seconds": 2127.065003871001,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.770945676305692,
+        "selection_score_smooth": 0.7385235257290684
+      }
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 0.00017085712352395057,
+      "train": {
+        "loss": 0.5749672863954207,
+        "seconds": 913.3144290939999,
+        "samples_per_second": 5.552304701244639,
+        "liver_dice": 0.950485328026805,
+        "liver_precision": 0.929827564400745,
+        "liver_recall": 0.9720818452226966,
+        "liver_iou": 0.9056427255464616,
+        "tumor_dice": 0.8337261102976845,
+        "tumor_precision": 0.7891154523223372,
+        "tumor_recall": 0.8836829012196677,
+        "tumor_iou": 0.7148630503170127,
+        "pixel_accuracy": 0.9802626322251856
+      },
+      "val": {
+        "liver_dice": 0.8475654328661244,
+        "liver_precision": 0.7496892959145767,
+        "liver_recall": 0.9748356931268688,
+        "liver_iou": 0.7354564476263794,
+        "tumor_dice": 0.6510590732685972,
+        "tumor_precision": 0.5103654427611842,
+        "tumor_recall": 0.8988460606899416,
+        "tumor_iou": 0.4826446142798618,
+        "pixel_accuracy": 0.9913232536569172,
+        "loss": 0.4559919614256434,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.8268156424581006,
+            "local_dice": 0.5767322958558984
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7533607926380905
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8642383052858275
+          }
+        },
+        "epoch_seconds": 2083.7785521219994,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.6797575848464424,
+        "selection_score_smooth": 0.7196474663051132
+      }
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 0.00016107176226377488,
+      "train": {
+        "loss": 0.5776254713419353,
+        "seconds": 913.6140988529987,
+        "samples_per_second": 5.550483517095584,
+        "liver_dice": 0.9521348137996521,
+        "liver_precision": 0.9323801041580804,
+        "liver_recall": 0.9727447452121007,
+        "liver_iou": 0.9086424726564086,
+        "tumor_dice": 0.8454806406343566,
+        "tumor_precision": 0.8026520441525012,
+        "tumor_recall": 0.8931374341986497,
+        "tumor_iou": 0.7323226187379918,
+        "pixel_accuracy": 0.9810041714598502
+      },
+      "val": {
+        "liver_dice": 0.8874265104472501,
+        "liver_precision": 0.8178695909643029,
+        "liver_recall": 0.9699142948810195,
+        "liver_iou": 0.7976340608331338,
+        "tumor_dice": 0.717427272000806,
+        "tumor_precision": 0.5995099149319165,
+        "tumor_recall": 0.8930884744472509,
+        "tumor_iou": 0.5593657625326156,
+        "pixel_accuracy": 0.9939674161960589,
+        "loss": 0.4294998028201368,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7932960893854749,
+            "local_dice": 0.5511303810436732
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7282448545554214
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8591222846427197
+          }
+        },
+        "epoch_seconds": 2086.9010585739998,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.7357825836275869,
+        "selection_score_smooth": 0.7260077025288646
+      }
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 0.00015024999703466894,
+      "train": {
+        "loss": 0.5478811062043728,
+        "seconds": 910.6019972739996,
+        "samples_per_second": 5.568843483290491,
+        "liver_dice": 0.9538640662034936,
+        "liver_precision": 0.9340826230689225,
+        "liver_recall": 0.9745014756237351,
+        "liver_iou": 0.9117974398813056,
+        "tumor_dice": 0.8508531318248534,
+        "tumor_precision": 0.8059796463339647,
+        "tumor_recall": 0.9010179414534171,
+        "tumor_iou": 0.7404215730718687,
+        "pixel_accuracy": 0.9817138021924608
+      },
+      "val": {
+        "liver_dice": 0.887174283362936,
+        "liver_precision": 0.8171973523423383,
+        "liver_recall": 0.9702578445968775,
+        "liver_iou": 0.7972266187772494,
+        "tumor_dice": 0.7709396193936774,
+        "tumor_precision": 0.7085742376981071,
+        "tumor_recall": 0.8453427217051314,
+        "tumor_iou": 0.627259353208795,
+        "pixel_accuracy": 0.9940849639868541,
+        "loss": 0.49690533178154145,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7430167597765364,
+            "local_dice": 0.516946735376881
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9607843137254902,
+            "local_dice": 0.6900890306447401
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.850555617280391
+          }
+        },
+        "epoch_seconds": 2087.2413736220005,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.7758124504629607,
+        "selection_score_smooth": 0.7445925172890449
+      }
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 0.000138577000901103,
+      "train": {
+        "loss": 0.53035928018046,
+        "seconds": 905.7284816199972,
+        "samples_per_second": 5.598808142710468,
+        "liver_dice": 0.954916598685764,
+        "liver_precision": 0.9359313073542613,
+        "liver_recall": 0.9746880677870451,
+        "liver_iou": 0.913722864112966,
+        "tumor_dice": 0.8554818079219751,
+        "tumor_precision": 0.809756260901401,
+        "tumor_recall": 0.9066805004911375,
+        "tumor_iou": 0.7474602097575525,
+        "pixel_accuracy": 0.9821417418675318
+      },
+      "val": {
+        "liver_dice": 0.8841161107399448,
+        "liver_precision": 0.815406916300196,
+        "liver_recall": 0.9654701901508077,
+        "liver_iou": 0.7923011697267213,
+        "tumor_dice": 0.7173281869840249,
+        "tumor_precision": 0.6111701155865193,
+        "tumor_recall": 0.8681170201723124,
+        "tumor_iou": 0.5592453032060906,
+        "pixel_accuracy": 0.9938149347581088,
+        "loss": 0.4648176995074293,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7988826815642458,
+            "local_dice": 0.5614183241698973
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7350195988506754
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8632560277854887
+          }
+        },
+        "epoch_seconds": 2086.806164607002,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.7332327014382367,
+        "selection_score_smooth": 0.7465166025835239
+      }
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 0.00012625249780714513,
+      "train": {
+        "loss": 0.519831086198883,
+        "seconds": 922.2828772569992,
+        "samples_per_second": 5.498313067565116,
+        "liver_dice": 0.9560947483122896,
+        "liver_precision": 0.9376186772248778,
+        "liver_recall": 0.975313609910222,
+        "liver_iou": 0.9158826883632828,
+        "tumor_dice": 0.8614093133950002,
+        "tumor_precision": 0.8165949728355957,
+        "tumor_recall": 0.911428047627387,
+        "tumor_iou": 0.7565574912293661,
+        "pixel_accuracy": 0.9826701718471244
+      },
+      "val": {
+        "liver_dice": 0.906165372908852,
+        "liver_precision": 0.8518422608001696,
+        "liver_recall": 0.9678889355622373,
+        "liver_iou": 0.8284299568378376,
+        "tumor_dice": 0.8027141571549948,
+        "tumor_precision": 0.7783194080198107,
+        "tumor_recall": 0.8286875886647521,
+        "tumor_iou": 0.6704448749244172,
+        "pixel_accuracy": 0.9952240694195612,
+        "loss": 0.438856560071777,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7541899441340782,
+            "local_dice": 0.5136115196509748
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7040732538143228
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8540926209430371
+          }
+        },
+        "epoch_seconds": 2101.031174245003,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.8052417136512017,
+        "selection_score_smooth": 0.777753157349664
+      }
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 0.00011348736134171487,
+      "train": {
+        "loss": 0.4815380375225816,
+        "seconds": 920.3637978750012,
+        "samples_per_second": 5.509777774269625,
+        "liver_dice": 0.9575818492504288,
+        "liver_precision": 0.9392144682048621,
+        "liver_recall": 0.9766819484447029,
+        "liver_iou": 0.9186158630889733,
+        "tumor_dice": 0.8690945869807659,
+        "tumor_precision": 0.8237527835272476,
+        "tumor_recall": 0.919718636427841,
+        "tumor_iou": 0.7684944973961184,
+        "pixel_accuracy": 0.9833264615121524
+      },
+      "val": {
+        "liver_dice": 0.892582191946895,
+        "liver_precision": 0.821989610136055,
+        "liver_recall": 0.9764389002284702,
+        "liver_iou": 0.8060031051117902,
+        "tumor_dice": 0.7556471153428828,
+        "tumor_precision": 0.6658125924734217,
+        "tumor_recall": 0.8735043770111761,
+        "tumor_iou": 0.6072611111044293,
+        "pixel_accuracy": 0.994283408942662,
+        "loss": 0.42501077693955264,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.776536312849162,
+            "local_dice": 0.5325989025199674
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7180131722666152
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8702305175036629
+          }
+        },
+        "epoch_seconds": 2110.178957492997,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.765552187229464,
+        "selection_score_smooth": 0.7709951479977398
+      }
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 0.00010049999565071686,
+      "train": {
+        "loss": 0.488004866600181,
+        "seconds": 963.8076550210026,
+        "samples_per_second": 5.261423241845182,
+        "liver_dice": 0.9583242424490095,
+        "liver_precision": 0.9409235970471495,
+        "liver_recall": 0.9763805996766813,
+        "liver_iou": 0.9199832438282495,
+        "tumor_dice": 0.8720625790700655,
+        "tumor_precision": 0.8247870825685153,
+        "tumor_recall": 0.9250871154818082,
+        "tumor_iou": 0.7731480159165997,
+        "pixel_accuracy": 0.9835844865519486
+      },
+      "val": {
+        "liver_dice": 0.8808102373772437,
+        "liver_precision": 0.7999828089661307,
+        "liver_recall": 0.9798064047290612,
+        "liver_iou": 0.7870070534894065,
+        "tumor_dice": 0.7920876025694454,
+        "tumor_precision": 0.7354146344356056,
+        "tumor_recall": 0.8582246289055742,
+        "tumor_iou": 0.6557492118255904,
+        "pixel_accuracy": 0.9937016725459678,
+        "loss": 0.40983378435852147,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.7374301675977654,
+            "local_dice": 0.513831160052221
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.725447046147565
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8529886373818981
+          }
+        },
+        "epoch_seconds": 2145.951367073001,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.793181767446573,
+        "selection_score_smooth": 0.7873048826223661
+      }
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 8.751264162361622e-05,
+      "train": {
+        "loss": 0.46908013938265086,
+        "seconds": 924.5042381050007,
+        "samples_per_second": 5.485101949172228,
+        "liver_dice": 0.9596193065727209,
+        "liver_precision": 0.9427549538525086,
+        "liver_recall": 0.9770980005387001,
+        "liver_iou": 0.9223732357157556,
+        "tumor_dice": 0.8770280043280733,
+        "tumor_precision": 0.8306143345142127,
+        "tumor_recall": 0.9289357494279149,
+        "tumor_iou": 0.7809883128949323,
+        "pixel_accuracy": 0.9841010902929861
+      },
+      "val": {
+        "liver_dice": 0.8989535836790333,
+        "liver_precision": 0.8346252270444242,
+        "liver_recall": 0.9740262069107738,
+        "liver_iou": 0.8164538482244865,
+        "tumor_dice": 0.7992570970339048,
+        "tumor_precision": 0.7429858684293845,
+        "tumor_recall": 0.8647503546590083,
+        "tumor_iou": 0.6656354953750436,
+        "pixel_accuracy": 0.9947866828500372,
+        "loss": 0.3973432719320663,
+        "volumes": 28,
+        "lesion_size_metrics": {
+          "small_lt_15mm": {
+            "lesions": 179,
+            "detection_recall": 0.770949720670391,
+            "local_dice": 0.5320755578456091
+          },
+          "medium_15_to_40mm": {
+            "lesions": 51,
+            "detection_recall": 0.9803921568627451,
+            "local_dice": 0.7142378016777422
+          },
+          "large_gt_40mm": {
+            "lesions": 16,
+            "detection_recall": 1.0,
+            "local_dice": 0.8612889379650903
+          }
+        },
+        "epoch_seconds": 2104.0916399640046,
+        "peak_gpu_memory_gb": 1.475024700164795,
+        "selection_score": 0.8022327142178755,
+        "selection_score_smooth": 0.7921813247888024
+      }
+    }
+  ],
+  "note": "Epoch-wise train and validation aggregates only. No held-out test evaluation result was found for this ablation; do not report these validation metrics as test performance."
+}
