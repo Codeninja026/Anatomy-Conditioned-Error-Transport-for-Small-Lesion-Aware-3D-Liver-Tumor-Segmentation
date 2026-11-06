@@ -23,7 +23,7 @@ At each decoder scale, ACET compares sigmoid-projected encoder evidence with the
 
 The model uses a 3D residual encoder-decoder with SE and transformer context at the bottleneck, multi-scale supervision, and overlapping-patch volume inference with Gaussian blending. The implementation also provides `unet` and `cers` architecture choices for comparison; their checkpoints are not included in this compact release.
 
-![Qualitative predictions](assets/prediction_comparison.png)
+![ACET-Net qualitative predictions across small, medium, and large held-out lesions](assets/heldout_qualitative_predictions.png)
 
 ## Data and evaluation protocol
 
@@ -50,7 +50,7 @@ The included summary reports four-view in-plane flip test-time augmentation (TTA
 
 These are results from one seed and one held-out split. They are not a multi-seed estimate, and comparisons to other papers are not claimed unless preprocessing, split, inference, and metric definitions are matched. For definitions and complete aggregate values, see `results/lits_test_summary.json`.
 
-![Example predictions on held-out cases](assets/prediction_comparison.png)
+![Matched LiTS test results with four-view TTA](assets/matched_lits_test_results.png)
 
 ## Additional experiment results
 
@@ -116,4 +116,3 @@ If you use this code, please cite the associated project/paper once a formal bib
 ## License
 
 No license is included yet. Unless a license is added by the repository owner, standard copyright applies and reuse permissions are not granted. LiTS and 3DIRCADb data are not redistributed here and remain subject to their respective terms.
-
